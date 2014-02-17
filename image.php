@@ -7,8 +7,9 @@
  */ 
 
 get_header(); ?>
+	    <div class="container-fluid">
 			
-			<div id="content" class="clearfix row">
+			<div id="content" class="clearfix row-fluid">
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
 

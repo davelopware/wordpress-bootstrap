@@ -1,18 +1,19 @@
 <?php get_header(); ?>
+	    <div class="container">
 			
 			<div id="content" class="clearfix row">
+
+			<header>
+				
+				<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>
 			
-				<div id="main" class="col-sm-8 clearfix" role="main">
+			</header> <!-- end article header -->
+			
+				<div id="main" class="col-lg-8 col-md-8 col-sm-12 col-xs-12 main clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						
-						<header>
-							
-							<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>
-						
-						</header> <!-- end article header -->
 					
 						<section class="post_content clearfix" itemprop="articleBody">
 							<?php the_content(); ?>
@@ -47,8 +48,12 @@
 					<?php endif; ?>
 			
 				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 side pull-left">
+
+					<?php get_sidebar(); ?>
+
+				</div>
     
 			</div> <!-- end #content -->
 

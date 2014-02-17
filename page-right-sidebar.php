@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Left Sidebar Page
+Template Name: Right Sidebar Page
 */
 ?>
 
@@ -16,7 +16,7 @@ Template Name: Left Sidebar Page
 			
 			</header> <!-- end article header -->
 			
-				<div id="main" class="col-lg-9 col-md-9 col-sm-12 col-xs-12 main pull-right clearfix" role="main">
+				<div id="main" class="col-lg-9 col-md-9 col-sm-12 col-xs-12 main pull-left clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -56,7 +56,7 @@ Template Name: Left Sidebar Page
 			
 				</div> <!-- end #main -->
 
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 side pull-left">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 side pull-right">
 
 					<?php get_sidebar(); ?>
 

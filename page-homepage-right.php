@@ -1,10 +1,11 @@
 <?php
 /*
-Template Name: Homepage
+Template Name: Homepage - Right Sidebar
 */
 ?>
 
 <?php get_header(); ?>
+	    <div class="container">
 			
 			<div id="content" class="clearfix row">
 			
@@ -39,7 +40,7 @@ Template Name: Homepage
 								
 							</div>
 							
-							<?php get_sidebar('sidebar2'); // sidebar 2 ?>
+							<?php get_sidebar('sidebar2'); ?>
 													
 						</section> <!-- end article header -->
 						
@@ -50,11 +51,6 @@ Template Name: Homepage
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
-					
-					<?php 
-						// No comments on homepage
-						//comments_template();
-					?>
 					
 					<?php endwhile; ?>	
 					
@@ -74,8 +70,6 @@ Template Name: Homepage
 					<?php endif; ?>
 			
 				</div> <!-- end #main -->
-    
-				<?php //get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
 
