@@ -1,6 +1,7 @@
 <?php get_header(); ?>
+	    <div class="container-fluid">
 			
-			<div id="content" class="clearfix row">
+			<div id="content" class="clearfix row-fluid">
 			
 				<div id="main" class="col-sm-12 clearfix" role="main">
 
